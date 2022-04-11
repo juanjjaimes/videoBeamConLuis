@@ -88,6 +88,7 @@ nav li:hover a{
     background-color: #fddb0d;
     border-radius: 14px;
 }
+
 @media(max-width: 1024px){
     .main-bar{
         padding: 0 2%;
@@ -116,7 +117,7 @@ nav li:hover a{
         left: 0;
         transform: rotate(0);
         transition: 0.25s ease-in-out;
-        }
+    }
     .checkbtn span:nth-child(1){
         top: 0;
     }
@@ -127,6 +128,7 @@ nav li:hover a{
         top: 14px;
     }
 }
+
 @media(max-width: 980px){
     .main-bar{
         padding: 0 10%;
