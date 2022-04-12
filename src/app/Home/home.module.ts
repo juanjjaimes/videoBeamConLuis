@@ -7,6 +7,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { AgendarComponent } from './components/agendar/agendar.component';
 import { AgendasComponent } from './components/agendas/agendas.component';
 import { MainComponent } from './main/main.component';
+import { AgendarFormularioComponent } from './components/agendar-formulario/agendar-formulario.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { MainComponent } from './main/main.component';
     NavComponent,
     InicioComponent,
     AgendarComponent,
-    AgendasComponent
+    AgendasComponent,
+    AgendarFormularioComponent
   ],
   imports: [
     CommonModule,
