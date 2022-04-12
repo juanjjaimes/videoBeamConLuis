@@ -1,1 +1,18 @@
-<p>agendar works!</p>
+<table class="table container mt-5">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Referencia</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Opción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of items, let index = index">
+        <th scope="row">{{ index + 1 }}</th>
+        <td>Mark</td>
+        <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid suscipit eaque, rem ullam atque doloribus veniam cumque consequatur quibusdam voluptates totam quidem saepe dolores nisi officiis fugit obcaecati. Voluptatem, voluptates.</p></td>
+        <td><a routerLink="/home/agendar/{{index}}" class="btn btn-primary">Agendar</a></td>
+      </tr>
+    </tbody>
+  </table>

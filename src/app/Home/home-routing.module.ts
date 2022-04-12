@@ -4,6 +4,7 @@ import { MainComponent } from './main/main.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { AgendarComponent } from './components/agendar/agendar.component';
 import { AgendasComponent } from './components/agendas/agendas.component';
+import { AgendarFormularioComponent } from './components/agendar-formulario/agendar-formulario.component';
 
 const routes: Routes = [
   { 
@@ -12,8 +13,9 @@ const routes: Routes = [
     children: [
       { path: 'inicio', component: InicioComponent },
       { path: 'agendar', component: AgendarComponent },
+      { path: 'agendar/:id', component: AgendarFormularioComponent },
       { path: 'agendas', component: AgendasComponent },
-      { path: '**', redirectTo: 'inicio' },
+      // { path: '**', redirectTo: 'inicio' },
     ]
   }
 ];
