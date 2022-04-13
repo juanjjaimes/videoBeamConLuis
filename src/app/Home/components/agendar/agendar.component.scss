@@ -3,7 +3,9 @@
     border-radius: 3px;
     border-collapse: collapse;
     height: 320px;
-    margin: auto;
+    margin-top: 30px;
+    margin-left: 130px;
+    margin-right: 130px;
     max-width: 1200px;
     padding: 5px;
     width: 100%;
@@ -11,7 +13,7 @@
     animation: float 5s infinite;
 }
 .btn{
-    color: #1b1e24;
+    background-color: #577fd1;
 }
 th{
     color: #D5DDE5;
