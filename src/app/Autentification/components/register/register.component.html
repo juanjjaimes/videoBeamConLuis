@@ -1,19 +1,10 @@
-<div class="loginbox">
-    <img src="./assets/img/profile.svg" class="avatar">
-    <h1>Registrate</h1>
-    <form>
-        <input type="text" class="input-field" placeholder="Nombre" required> 
-        <input type="email" class="input-field" placeholder="Correo" required> 
-		<input type="password" class="input-field" placeholder="Contraseña" required>
-        <label class="content-input">
-            <input type="radio" id="op" name="fav" value="OP">
-            <label for="op">Profesor</label><br>
-            <input type="radio" id="aux" name="fav" value="AUX">
-            <label for="aux">Auxiliar</label><br>
-            <i></i>
-        </label>
-        
-        <button type="submit" class="submit-btn">Registrate</button><br>
-        <a href="#">¿Ya tienes cuenta?</a>
-    </form>
-</div>
+<form class="formulario">
+  <input type="text" class="input-field" placeholder="Nombre" >
+  <input type="email" class="input-field" placeholder="Correo" >
+  <input type="password" class="input-field" placeholder="Contraseña" >
+  <div class="rol">
+    <button type="button" class="btn">Docente</button>
+    <button type="button" class="btn btn-activated">Auxiliar</button>
+  </div>
+  <button routerLink="/home" type="submit" class="btn-submit">Regístrate</button><br>
+</form>

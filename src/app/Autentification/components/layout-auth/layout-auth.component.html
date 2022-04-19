@@ -1,6 +1,19 @@
 <app-header></app-header>
-<div class="contenedor">
-  <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer>
 
+
+
+<div class="loginbox">
+  <div class="img">
+    <img src="./assets/img/boy.png" class="avatar">
+  </div>
+  <div class="botones">
+    <button routerLink="/auth/register" routerLinkActive="btn-activated" class="btn">REGISTRARSE</button>
+    <button routerLink="/auth/login" routerLinkActive="btn-activated" class="btn">INICIAR SESIÓN</button>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+<app-footer></app-footer>
