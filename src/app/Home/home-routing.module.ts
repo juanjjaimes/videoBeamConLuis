@@ -13,9 +13,9 @@ const routes: Routes = [
     children: [
       { path: 'inicio', component: InicioComponent },
       { path: 'agendar', component: AgendarComponent },
-      { path: 'agendar/:id', component: AgendarFormularioComponent },
+      { path: 'agendar-form', component: AgendarFormularioComponent },
       { path: 'agendas', component: AgendasComponent },
-      // { path: '**', redirectTo: 'inicio' },
+      { path: '**', redirectTo: 'inicio' },
     ]
   }
 ];

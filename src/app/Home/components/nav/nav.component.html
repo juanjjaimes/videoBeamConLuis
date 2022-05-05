@@ -1,35 +1,46 @@
 <div class="contenedor">
     <nav class="main-bar">
                 <div class="logo-header">
-                    <img src="./assets/img/escudo_61_anios.png" width="100px" alt="">
-                    <a href="">UNIPAMPLONA</a>
+                    <div class="contenedor-logo">
+                        <div class="img_upa">
+                            <img src="./assets/img/escudo_61_anios.png" width="100px" alt="">
+                        </div>
+                        <div class="etiqueta_upa">
+                            <a href="">UNIPAMPLONA</a>
+                        </div>
+                    </div>
                 </div>
             <ul class="ocultarmenu">
                 <li routerLinkActive="active">
-                    <a routerLink="/home/inicio">Home</a>
+                    <a class="enlace-nav" routerLink="/home/inicio">INICIO</a>
                 </li>
                 <li routerLinkActive="active">
-                    <a routerLink="/home/agendar">Agendar</a>
+                    <a class="enlace-nav" routerLink="/home/agendar">CERRAR SESIÓN</a>
                 </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/home/agendas">Mis agendas</a>
-                </li>
+                
                 <li routerLinkActive="active">
                     <img src="./assets/img/boy3.png" width="100px" alt="">
                 </li>
             </ul>
     </nav>
 </div>
-
-<!-- <div class="barra-superior"></div>
-<div class="main-header">
-  <div class="logo logo-61"> <img src="./assets/img/escudo_61_anios.png" alt=""> </div>
-  <div class="main-logo">
-    <h1>UNIVERSIDAD DE <span>PAMPLONA</span></h1>
-    <P>Formando lideres para la construccion de un nuevo<br> país en paz</P>
-  </div>
-  <div class="contenedor-logo">
-    <div class="logo logo-acreditacion"> <img src="./assets/img/logo_acreditacion.png" alt=""> </div>
-    <div class="logo logo-colombia"> <img src="./assets/img/logo-colombia.png" height="135px" alt=""> </div>
-  </div>
-</div> -->
+<div class="menuOpciones">
+    <button class="btn_icono" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon  class="icono_more">more_horiz</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>app_registration</mat-icon>
+          <a  routerLink="/home/agendar-form"><span>Agendar VB</span></a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>checklist</mat-icon>
+          <span>Lista de agenda de VB</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>calendar_month</mat-icon>
+          <span>Calendario</span>
+        </button>
+      </mat-menu>
+    
+</div>

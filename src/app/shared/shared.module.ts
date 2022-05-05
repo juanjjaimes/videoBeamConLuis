@@ -3,19 +3,27 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   exports:[
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MatMenuModule,
+    MatIconModule,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatMenuModule,
+    MatIconModule,
   ]
 })
 export class SharedModule { }
