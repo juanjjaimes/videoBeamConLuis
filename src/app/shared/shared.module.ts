@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 
@@ -19,11 +20,13 @@ import {MatMenuModule} from '@angular/material/menu';
     FooterComponent,
     MatMenuModule,
     MatIconModule,
+    MatDatepickerModule
   ],
   imports: [
     CommonModule,
     MatMenuModule,
     MatIconModule,
+    MatDatepickerModule
   ]
 })
 export class SharedModule { }
