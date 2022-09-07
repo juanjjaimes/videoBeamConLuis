@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -7,11 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  userForm: FormGroup;
+  userForm!: FormGroup;
 
   constructor(private fb: FormBuilder) { }
-
-
 
   ngOnInit(): void {
     this.buildForm();
@@ -22,7 +21,11 @@ export class RegisterComponent implements OnInit {
   }
   buildForm(){
     this.userForm = this.fb.group({
-
+      name: ['asdasdsdsd', [Validators.required]], // primer argumento es el valor pord efecto, y el seundo son las validaciones un array o una sola validacion
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', Validators.required],
+      roles: [''],
+      state: ['false']
     });
   }
 

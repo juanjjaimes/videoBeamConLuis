@@ -26,21 +26,26 @@
     >
 
   <div class="rol">
-    <label for="rolDocente">Docente</label>
-    <input 
-      id="rolDocente" 
-      type="radio" 
-      name="rol"
-      formControlName="rol"  
-      >
-      <label for="rolAuxiliar"> Auxiliar</label>
-    <input 
-      id="rolAuxiliar" 
-      type="radio" 
-      name="rol" 
-      formControlName="rol" 
-      >
-    
+    <div>
+        <input 
+        id="rolDocente" 
+        type="radio" 
+        name="roles"
+        formControlName="roles"  
+        value="docente"
+        >
+        <label for="rolDocente">Docente</label>
+    </div>
+    <div>
+        <input 
+        id="rolAuxiliar" 
+        type="radio" 
+        name="roles" 
+        formControlName="roles" 
+        value="auxiliar"
+        >
+        <label for="rolAuxiliar">Auxiliar</label>
+    </div>
   </div>
-  <button type="submit" class="btn-submit" [disabled]="userForm.invalid">Regístrate</button><br>
+  <button type="submit" class="btn-submit" [disabled]="userForm.invalid">Regístrate</button>
 </form>
