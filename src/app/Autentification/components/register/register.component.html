@@ -1,10 +1,46 @@
-<form class="formulario">
-  <input type="text" class="input-field" placeholder="Nombre" >
-  <input type="email" class="input-field" placeholder="Correo" >
-  <input type="password" class="input-field" placeholder="Contraseña" >
+<form class="formulario" (ngSubmit)="onSubmit()" [formGroup]="userForm">
+
+  <input 
+    type="text" 
+    name="name" 
+    class="input-field" 
+    placeholder="Nombre" 
+    required
+    formControlName="name"  
+    >
+  <input 
+    type="email" 
+    name="email" 
+    class="input-field" 
+    placeholder="Correo"
+    required
+    formControlName="email"   
+    >
+  <input 
+    type="password" 
+    name="password" 
+    class="input-field" 
+    placeholder="Contraseña" 
+    required
+    formControlName="password"  
+    >
+
   <div class="rol">
-    <button type="button" class="btn">Docente</button>
-    <button type="button" class="btn btn-activated">Auxiliar</button>
+    <label for="rolDocente">Docente</label>
+    <input 
+      id="rolDocente" 
+      type="radio" 
+      name="rol"
+      formControlName="rol"  
+      >
+      <label for="rolAuxiliar"> Auxiliar</label>
+    <input 
+      id="rolAuxiliar" 
+      type="radio" 
+      name="rol" 
+      formControlName="rol" 
+      >
+    
   </div>
-  <button routerLink="/home" type="button" class="btn-submit">Regístrate</button><br>
+  <button type="submit" class="btn-submit" [disabled]="userForm.invalid">Regístrate</button><br>
 </form>

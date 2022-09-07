@@ -7,18 +7,20 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LayoutAuthComponent } from './components/layout-auth/layout-auth.component';
 import { SharedModule } from '../shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
     RegisterComponent,
-    LayoutAuthComponent
+    LayoutAuthComponent,
   ],
   imports: [
     CommonModule,
     AutentificationRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
   ]
 })
 export class AutentificationModule { }
