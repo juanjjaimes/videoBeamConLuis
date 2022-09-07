@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  userForm: FormGroup;
+
+  constructor(private fb: FormBuilder) { }
+
+
 
   ngOnInit(): void {
+    this.buildForm();
+  }
+
+  onSubmit(){
+    console.log("form")
+  }
+  buildForm(){
+    this.userForm = this.fb.group({
+
+    });
   }
 
 }
