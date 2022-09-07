@@ -10,11 +10,9 @@ import { MainComponent } from './main/main.component';
 import { AgendarFormularioComponent } from './components/agendar-formulario/agendar-formulario.component';
 import { SharedModule } from '../shared/shared.module';
 
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
 
 
 @NgModule({
