@@ -1,6 +1,17 @@
-<form class="formulario">
-        <input type="email" class="input-field" placeholder="Correo" >
-		    <input type="password" class="input-field" placeholder="Contraseña" >
-        <a class="pass-forget" routerLink="">¿Olvidate tu contraseña?</a>
-        <button routerLink="/home" type="button" class="btn-submit">Iniciar Sesión</button><br>
+<form class="formulario" [formGroup]="loginForm" (ngSubmit)="login()">
+  <input 
+        type="email" 
+        class="input-field" 
+        placeholder="Correo"
+        formControlName="email"   
+        />
+  <input 
+        type="password" 
+        class="input-field" 
+        placeholder="Contraseña" 
+        formControlName="password" 
+        />
+  <a class="pass-forget" routerLink="">¿Olvidate tu contraseña?</a>
+
+  <button [disabled]="loginForm.invalid" type="submit" class="btn-submit">Iniciar Sesión</button>
 </form>
